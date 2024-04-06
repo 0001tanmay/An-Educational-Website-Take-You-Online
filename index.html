@@ -1,0 +1,1180 @@
+<!-- header and form section start-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg">
+    <link rel="stylesheet" href="final.css">
+   <title>Take_you_Online</title>
+  </head>
+
+  <body id="home1">
+    <!-- header section starts  -->
+
+<header class="header"  id="navbar">
+
+   <a href="#" class="logo" > <i class="fas fa-lightbulb"></i> Take_You_Online </a>
+
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="#home1">home</a>
+      <a href="about.html">about</a>
+      <a href="#course">courses</a>
+      <a href="#contact">contact</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+    </body>
+  </html>
+
+<!-- header and forn section start-->
+
+
+
+<!-- start animation -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <style>
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  margin: 2rem;
+
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+
+  cursor: pointer;
+}
+
+.container {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 30rem;
+  height: 36rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://as2.ftcdn.net/v2/jpg/01/71/44/87/1000_F_171448726_suYMaoyGeJe0uDqJDMDoGBOayWJRXZjG.jpg");
+  background-position: var(--bX) var(--bY);
+  background-size: 40rem auto;
+  box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+
+  transition: transform .6s 1s;
+}
+
+.container::before,
+.container::after {
+  content: "";
+
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+
+  position: absolute;
+  z-index: 2;
+
+  opacity: .3;
+  transition: .3s;
+}
+
+.container::before {
+  top: 2rem;
+  right: 2rem;
+
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.container::after {
+  bottom: 2rem;
+  left: 2rem;
+
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.container--active {
+  transition: none;
+}
+
+.container--2 {
+  filter: hue-rotate(80deg) saturate(140%);
+}
+
+.container--3 {
+  filter: hue-rotate(160deg) saturate(140%);
+}
+
+.container pre {
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 2.2rem;
+}
+
+.wrap:hover .container::before,
+.wrap:hover .container::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 0%, .6);
+  font-size: 1.6rem;
+
+
+}
+
+
+  </style>
+
+<link rel="stylesheet" href="final.css">
+
+  </head>
+
+
+ <body>
+<br>
+<section class="main">
+<a href="#course">
+  <div class="wrap wrap--1">
+    <div class="container container--1">
+
+      <pre >
+
+
+
+      ALL COURSE
+
+
+
+
+
+</pre>
+
+
+    </div>
+
+  </div>
+</a>
+
+<a href ="#gateexam">
+  <div class="wrap wrap--2">
+    <div class="container container--2">
+        <pre >
+
+
+
+   GATE SUBJECT
+
+
+
+
+
+</pre>
+    </div>
+  </div>
+</a>
+
+
+<a href="#practice_gate_question">
+
+  <div class="wrap wrap--3">
+    <div class="container container--3">
+ <pre >
+
+
+
+   GATE PRACTICE
+
+
+
+
+
+</pre>
+    </div>
+  </div>
+  </a>
+
+
+</section>
+
+
+
+    <script>
+  class parallaxTiltEffect {
+
+  constructor({element, tiltEffect}) {
+
+    this.element = element;
+    this.container = this.element.querySelector(".container");
+    this.size = [300, 360];
+    [this.w, this.h] = this.size;
+
+    this.tiltEffect = tiltEffect;
+
+    this.mouseOnComponent = false;
+
+    this.handleMouseMove = this.handleMouseMove.bind(this);
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
+    this.handleMouseLeave = this.handleMouseLeave.bind(this);
+    this.defaultStates = this.defaultStates.bind(this);
+    this.setProperty = this.setProperty.bind(this);
+    this.init = this.init.bind(this);
+
+    this.init();
+  }
+
+  handleMouseMove(event) {
+    const {offsetX, offsetY} = event;
+
+    let X;
+    let Y;
+
+    if (this.tiltEffect === "reverse") {
+      X = ((offsetX - (this.w/2)) / 3) / 3;
+      Y = (-(offsetY - (this.h/2)) / 3) / 3;
+    }
+
+    else if (this.tiltEffect === "normal") {
+      X = (-(offsetX - (this.w/2)) / 3) / 3;
+      Y = ((offsetY - (this.h/2)) / 3) / 3;
+    }
+
+    this.setProperty('--rY', X.toFixed(2));
+    this.setProperty('--rX', Y.toFixed(2));
+
+    this.setProperty('--bY', (80 - (X/4).toFixed(2)) + '%');
+    this.setProperty('--bX', (50 - (Y/4).toFixed(2)) + '%');
+  }
+
+  handleMouseEnter() {
+    this.mouseOnComponent = true;
+    this.container.classList.add("container--active");
+  }
+
+  handleMouseLeave() {
+    this.mouseOnComponent = false;
+    this.defaultStates();
+  }
+
+  defaultStates() {
+    this.container.classList.remove("container--active");
+    this.setProperty('--rY', 0);
+    this.setProperty('--rX', 0);
+    this.setProperty('--bY', '80%');
+    this.setProperty('--bX', '50%');
+  }
+
+  setProperty(p, v) {
+    return this.container.style.setProperty(p, v);
+  }
+
+  init() {
+    this.element.addEventListener('mousemove', this.handleMouseMove);
+    this.element.addEventListener('mouseenter', this.handleMouseEnter);
+    this.element.addEventListener('mouseleave', this.handleMouseLeave);
+  }
+
+}
+
+const $ = e => document.querySelector(e);
+
+const wrap1 = new parallaxTiltEffect({
+  element: $('.wrap--1'),
+  tiltEffect: 'reverse'
+});
+
+const wrap2 = new parallaxTiltEffect({
+  element: $('.wrap--2'),
+  tiltEffect: 'normal'
+});
+
+const wrap3 = new parallaxTiltEffect({
+  element: $('.wrap--3'),
+  tiltEffect: 'reverse'
+});
+    </script>
+
+
+
+    </body>
+  </html>
+
+<!-- end animation -->
+
+
+
+
+<!-- about fact and quoto section html start-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Take_you_Online</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+
+<link rel="stylesheet" href="final.css">
+
+</head>
+
+<body>
+
+
+
+<section class="heading-link">
+   <h3 class="box_fact">Today's Fact</h3><br/><br/><br/><br/>
+  <h1 class="fact">"Ants take rest for around 8 Minutes in 12-hour period."</h1>
+</section>
+
+  <section class="heading-link">
+   <h3 class="box_fact">Quote Of The Day</h3><br/><br/><br/><br/>
+    <h1 class="fact">"When Human Don't Use There Brain and Heart for Decision then Become Worse Than Animals, So Be careful When You Take Decisions."</h1>
+</section>
+
+
+</body>
+</html>
+
+<!--   about facts and quoto of the day end-->
+
+
+
+<!-- Course, Gate Exam section start -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>courses</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+<link rel="stylesheet" href="final.css">
+
+
+
+</head>
+<body>
+
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- header section ends -->
+
+
+
+  <!-- Course section starts  -->
+
+<section class="teachers" id="course">
+
+   <h1 class="heading" >Our Courses</h1>
+
+   <div class="swiper teachers-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="https://i0.wp.com/masterprograming.com/wp-content/uploads/2019/11/python-programming-in-hindi.png?fit=800%2C445&ssl=1" alt=""style="width:250;height:200px">
+               <div class="share">
+                  <a href="Python_blog.html" >Concepts and MCQ</a>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/687167/cover-0828_AfterAllTheseYearstheWorldisStillPoweredbyCProgramming_Razvan_Newsletter-2b9ea38294bb08c5aea1f0c1cb06732f.png" alt=""style="width:250;height:200px">
+               <div class="share">
+                  <a href="CPP_blog.html" > Concepts and MCQ</a>
+
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220630132824/HTML-Full-Form.jpg" alt=""style="width:250;height:200px">
+               <div class="share">
+                  <a href="HTML_blog.html">Concepts for Web Development</a>
+
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg" alt=""style="width:250;height:200px">
+               <div class="share">
+                  <a href="CSS_blog.html">Concepts for Web Development</a>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="https://www.passionateinmarketing.com/wp-content/uploads/2021/11/1_sMryEXZVPKFjGNcfSzE8Mw.jpeg" alt=""style="width:250;height:200px">
+               <div class="share">
+                  <a href="DSA.html" >DSA Problem Solving and Interview</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="https://i0.wp.com/hackersonlineclub.com/wp-content/uploads/2019/04/Cryptography.png?fit=650%2C379&ssl=1" alt=""style="width:250;height:200px">
+               <div class="share">
+                  <a href="Cryptography_blog.html" >Cryptography</a>
+
+               </div>
+            </div>
+
+         </div>
+
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="https://www.exams88.in/wp-content/uploads/2019/01/GATE-2022.jpg" alt="" style="width:250;height:200px">
+               <div class="share">
+                  <a href="#gateexam" >Gate Cse</a>
+
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- Course section ends -->
+
+
+<!--   Gate Exam secction start  -->
+
+<section class="courses"id="gateexam">
+
+   <h1 class="heading" > For Gate Exam Preparaton </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="https://zerovigyan.com/wp-content/uploads/2022/06/GATE-General-Aptitude-Syllabus.png" alt="">
+            <h3>General Apptitude</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>General Aptitudde for Gate Exam!</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+
+
+      <div class="box">
+         <div class="image">
+            <img src="https://www.magicmarks.in/wp-content/uploads/2021/11/Engineering-Mathematics-I.jpg" alt="">
+            <h3>Engineering Maths</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Engineering MAth for Gate Exam.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+
+
+      <div class="box">
+         <div class="image">
+            <img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/07/13022153/BLOG-Images_7-7-2020-06.png" alt="">
+            <h3>Data Structure and C Language</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>DS and C lang. for gate Exam.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://pandorafms.com/blog/wp-content/uploads/2018/05/what-is-an-algorithm-featured.png" alt="">
+            <h3>Algorithms</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Best Explanation of Algorithm for Gate.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://researcherstore.com/wp-content/uploads/2021/07/TOC-%D8%AA%D8%AE%D8%B5%D9%8A%D8%B5.png" alt="">
+            <h3>Theory Of Computation</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Theory of Computation for Gate Exam.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="https://lastmomenttuitions.com/wp-content/uploads/2021/03/Compiler-design-1-1.jpg" alt="">
+            <h3>Compiler Design</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Best Resource of CD for Gate.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+      <div class="box hide">
+         <div class="image">
+            <img src="https://www.learncomputerscienceonline.com/wp-content/uploads/2021/04/Computer-Organization-And-Architecture-COA.jpg" alt="">
+            <h3>Computer Organization and Architecture</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Optimum and Best Explnantion for gate</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+      <div class="box hide">
+         <div class="image">
+            <img src="https://previews.123rf.com/images/macro1/macro11905/macro1190506034/123895537-operating-system-icon-vector-from-computer-collection-thin-line-operating-system-outline-icon.jpg" alt="">
+            <h3>Operating System</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Operating System For Gate.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+      <div class="box hide">
+         <div class="image">
+            <img src="https://i.ytimg.com/vi/lDpB9zF8LBw/maxresdefault.jpg" alt="">
+            <h3>DataBase Managment System</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Data Base Management System For Gate.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+
+        <div class="box hide">
+         <div class="image">
+            <img src="https://studyopedia.com/wp-content/uploads/2017/04/computer-networking.png" alt="">
+            <h3>Computer Network</h3>
+         </div>
+         <div class="content">
+            <h3>choose what's best for you!</h3>
+            <p>Com[uter Network For Gate Exam.</p>
+            <a href="#" class="btn">read more</a>
+            <div class="icons">
+
+            </div>
+         </div>
+      </div>
+
+
+   </div>
+
+   <div class="load-more"> <div class="btn">load more</div> </div>
+
+</section>
+
+
+<!--   Gate Exam secction End  -->
+
+
+
+
+
+ </body>
+</html>
+
+<!-- Course, Gate Exam section end  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+<link rel="stylesheet" href="final.css">
+
+</head>
+<body>
+
+
+
+
+
+<!-- Practece Questions For Gate Cse starts  -->
+
+<section class="subjects" id="practice_gate_question">
+
+   <h1 class="heading"  >Practice Questions For Gate Cse</h1>
+
+   <div class="box-container">
+
+
+
+<a href="mathematics_MCQ.html">
+      <div class="box">
+         <h3>Mathemetics</h3>
+      </div>
+       </a>
+
+
+<a href="CLanguage_MCQ.html">
+      <div class="box">
+        <h3> C Language</h3>
+      </div>
+      </a>
+
+
+<a href="Dbms_MCQ.html">
+      <div class="box">
+         <h3>DBMS</h3>
+      </div>
+      </a>
+
+<a href="ds_MCQ.html">
+        <div class="box">
+         <h3>Data Structure</h3>
+      </div>
+ </a>
+
+
+<a href="algo_MCQ.html">
+      <div class="box">
+         <h3>Algorithms</h3>
+      </div>
+       </a>
+
+
+
+<a href="toc_MCQ.html">
+      <div class="box">
+         <h3>Automata</h3>
+      </div>
+</a>
+
+
+<a href="cd_MCQ.html">
+      <div class="box">
+         <h3>compiler Design</h3>
+      </div>
+</a>
+
+
+<a href="coa.html">
+      <div class="box">
+         <h3>Computer Organization</h3>
+      </div>
+</a>
+
+<a href="os_MCQ.html">
+      <div class="box">
+         <h3>Operating System</h3>
+      </div>
+       </a>
+
+
+<a href="cn_MCQ.html">
+      <div class="box">
+
+         <h3>Computer Network</h3>
+      </div>
+      </a>
+
+
+<a href="de_MCQ.html">
+      <div class="box">
+         <h3>Digital Electronics</h3>
+      </div>
+</a>
+
+ <a href="ga.html">
+     <div class="box">
+         <h3>General Aptitude</h3>
+      </div>
+</a>
+
+
+   </div>
+
+
+
+</section>
+
+<!-- Practece Questions For Gate Cse ends -->
+
+
+
+
+  <!-- students reviews section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading"> our students review </h1>
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <p>This is one of the best website for Gate exam preparation.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/4825/4825044.png" alt="">
+            <h3>Tanmay Tripathi</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>This is one of the best website for Python Language.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/4825/4825015.png" alt="">
+            <h3>Shaurya Pratap Singh</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>This is one of the best website for C++ coding language.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/4825/4825027.png" alt="">
+            <h3>Nirmala Yadav</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>This is one of the best website for HTML/CSS preparation.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/4825/4825051.png" alt="">
+            <h3>Ayushi Singh</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>This is one of the best website for learning Cryptography.</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/4825/4825062.png" alt="">
+            <h3>Siddharth Gupta</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+            </div>
+         </div>
+
+
+      </div>
+
+   </div>
+
+</section>
+
+  <!-- students reviews section end  -->
+
+
+
+
+
+<!-- faq section starts  -->
+
+<section class="faq">
+
+   <h1 class="heading">frequently asked questions</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <h3>how to contact for help?</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Go to Contect Section or About section there is phone number and mail id.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>what is the best career in 2023?</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            If you are field is computer /science then you got an plus point after that there are various hot field like : Blockchain Development, Quantum Software Engineer etc.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>How much an web developer earn?</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Average Salary of WebDeveloper in India is 4-12LPA.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Is gate exam good if i am not good in coding?</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+           Ofcourse there no need to master in coding!, If you have a storng base of computer science core subjects thenyou definately got an good rank.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Is DSA section also helpful for interview?</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            Yes!,We design it for Gate and also for interview poit of view.
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <h3>Is gate gate CSE easy for an non-cs student?</h3>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accordion-content">
+            It's depend upon how much time you spend in your study at starting it littile difficult but after some time it is normall.
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact"  id="contact">
+
+   <h1 class="heading"> get in touch </h1>
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours :</h3>
+         <p>24*7</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>Phone :</h3>
+         <p>8303452714</p>
+         <p></p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3> email : </h3>
+         <p>ayushpal8303@gmail.com</p>
+
+      </div>
+
+
+
+
+   </div>
+
+
+</section>
+
+<!-- contact section ends -->
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3> <i class="fas fa-lightbulb"></i> Take_You_Online </h3>
+         <p>This is best Website for bulilding basics of technologies.</p>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="#home1" class="link">home</a>
+         <a href="about.html" class="link">about</a>
+         <a href="#course" class="link">courses</a>
+         <a href="#contact" class="link">contact</a>
+      </div>
+
+      <div class="box">
+         <h3>useful links</h3>
+         <a href="#" class="link">help center</a>
+         <a href="#" class="link">ask questions</a>
+         <a href="#" class="link">send feedback</a>
+         <a href="#" class="link">private policy</a>
+         <a href="#" class="link">terms of use</a>
+      </div>
+
+      <div class="box">
+         <h3>newsletter</h3>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>Ayush Pal</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+  <!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+
+<script src="sc.js">
+</script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg">
+    <style>
+      .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+    background-color: white;
+}
+.quiz,
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+.choices li {
+    margin-bottom: 5px;
+}
+.choices label {
+    display: flex;
+    align-items: center;
+}
+.choices label,
+input[type="radio"] {
+    cursor: pointer;
+}
+input[type="radio"] {
+    margin-right: 8px;
+}
+.view-results {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: inherit;
+    color: white;
+    background: teal;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+.my-results {
+    padding: 1rem;
+    border: 1px solid goldenrod;
+}
+
+
+h4{
+  
+  font-size:160%;
+}
+
+label{
+  
+  font-size:120%;
+}
+      </style>
+    
+  </head>
+  
+  <body>
+
+<h1 style="text-align:center">MCQ's QUESTION</h1><br>
+
+<ul class="quiz">
+    <li>
+        <h4>1. Which of the following is an important requirement of c programming?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question0" value="A" /><span>Function</span>
+                          
+                        </label>
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question0" value="B" /><span>Input variables</span>
+                          
+                        </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question0" value="C" /><span>Output variables</span> 
+              </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question0" value="D" /><span>All of the above</span>
+                          
+                        </label>
+                
+            </li>
+        </ul>
+    </li>
+  
+  <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "Function"</a>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  
+    <li>
+        <h4>2.  Which of the following is true in the case of c programming?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question1" value="A" /><span>The function is a variable.</span>
+                          
+                        </label>
+            </li>
+            <li>
+                <label><input type="radio" name="question1" value="B" /><span>Parenthesis isn’t needed at all in c programming.</span>
+                  
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question1" value="C" /><span>There is no need for closing parenthesis in c programming</span></label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question1" value="D" /><span>Float is a variable.</span></label>
+            </li>
+        </ul>
+      
+      <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "Float is a variable."</a>
+  </div>
+</div>
+      
+      
+    </li>
+  
+  
+  
+      <li>
+        <h4>3. When was C programming developed?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question2" value="A" /><span>The 1950s</span>
+       </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question2" value="B" /><span>The 1960s</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question2" value="C" /><span>The 1980s</span>
+                  </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question2" value="D" /><span>The 1970s</span>
+                  </label>
+            </li>
+        </ul>
+      
+      <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "The 1970s"</a>
+  </div>
+</div>
+      
+      
+    </li>
+  
+  
+  
+  
+  
+      <li>
+        <h4>4. What was C programming adapted from?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question3" value="A" /><span>C++</span>   
+                        </label>
+            </li>
+            <li>
+                <label><input type="radio" name="question3" value="B" /><span>Combined programming language</span>
+                  
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question3" value="C" /><span>python</span></label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question3" value="D" /><span>All of the above</span></label>
+            </li>
+        </ul>
+      
+      <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "Combined programming language"</a>
+  </div>
+</div>
+      
+      
+    </li>
+  
+  
+  
+  
+  
+  
+  
+      <li>
+        <h4>5. Which of the following is not a variable type in c programming?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question4" value="A" /><span>Float</span>
+                          
+                        </label>
+            </li>
+            <li>
+                <label><input type="radio" name="question4" value="B" /><span>Int</span>
+                  
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question4" value="C" /><span>While loop</span>    
+                  </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question4" value="D" /><span>All of the above</span></label>
+            </li>
+        </ul>
+      
+      <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "While loop"</a>
+  </div>
+</div>
+      
+      
+    </li>
+  
+  
+  
+  
+  
+  
+      <li>
+        <h4>6. What is the use of print f in c programming?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question5" value="A" /><span>Helps in the printing of a string on the output screen</span>
+                          
+                        </label>
+            </li>
+            <li>
+                <label><input type="radio" name="question5" value="B" /><span>Processes the variables in a program</span>
+                  
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question5" value="C" /><span>Is a variable type</span>
+                  </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question5" value="D" /><span>All of the above</span></label>
+            </li>
+        </ul>
+      
+      <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "Processes the variables in a program"</a>
+  </div>
+</div>
+      
+      
+    </li>
+  
+  
+  
+  
+  
+  
+      <li>
+        <h4>7. What are strings in C programming?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question6" value="A" /><span>Individual variables</span>
+                          
+                        </label>
+            </li>
+            <li>
+                <label><input type="radio" name="question6" value="B" /><span>Group of function </span>
+                  
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question6" value="C" /><span>Group of character type variables in array form</span></label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question6" value="D" /><span>All of the above</span></label>
+            </li>
+        </ul>
+      
+      <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "Group of character type variables in array form "</a>
+  </div>
+</div>
+      
+      
+    </li>
+  
+  
+  
+  
+  
+  
+      <li>
+        <h4>8. What does a do-while loop do?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question7" value="A" /><span>Repeats the process infinitely</span>
+                          
+                        </label>
+            </li>
+            <li>
+                <label><input type="radio" name="question7" value="B" /><span>Processes the code at least once and then repeats</span>
+                  
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question7" value="C" /><span>Repeats only once</span></label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question7" value="D" /><span>All of the above</span></label>
+            </li>
+        </ul>
+      
+      <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "Processes the code at least once and then repeats"</a>
+  </div>
+</div>
+      
+      
+    </li>
+  
+  
+  
+  
+  
+  
+  
+      <li>
+        <h4>9. What of the following is true?</h4>
+        <ul class="choices">
+            <li>
+                <label>
+                  <input type="radio" name="question8" value="A" /><span>Variables are functions</span>
+                          
+                        </label>
+            </li>
+            <li>
+                <label><input type="radio" name="question8" value="B" /><span>Variable is a type of output command</span>
+                  
+                </label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question8" value="C" /><span>Variables are used to store values</span></label>
+            </li>
+            <li>
+                <label>
+                  <input type="radio" name="question8" value="D" /><span>All of the above</span></label>
+            </li>
+        </ul>
+      
+      <div class="dropdown">
+  <button class="dropbtn">Answer</button>
+  <div class="dropdown-content">
+    <a href="#">Answer is -> "Variables are used to store values"</a>
+  </div>
+</div>
+      
+      
+    </li>
+  
+  
+  
+  
+  
+  
+          
+        </ul>
+      
+      
+</ul>
+
+
+    
+    
+    
+    
+    
+    
+
+
+
+<button class="view-results" onclick="returnScore()">View Results</button>
+<span id="myresults" class="my-results">My results will appear here</span>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+    var answers = ["A","D", "D","B","C","B","C","B","C"]
+    tot = answers.length;
+function getCheckedValue(radioName) {
+    var radios = document.getElementsByName(radioName);
+    for (var y = 0; y < radios.length; y++)
+        if (radios[y].checked) return radios[y].value;
+}
+function getScore() {
+    var score = 0;
+    for (var i = 0; i < tot; i++)
+        if (getCheckedValue("question" + i) === answers[i]) score += 1;
+    return score;
+}
+function returnScore() {
+    document.getElementById("myresults").innerHTML =
+        "Your score is " + getScore() + "/" + tot;
+    if (getScore() > 6) {
+        console.log("Bravo");
+    }
+}
+
+
+
+    </script>
+    </body>
+  </html>

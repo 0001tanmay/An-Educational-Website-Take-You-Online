@@ -1,0 +1,134 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <style>
+      <link rel="icon" type="image/x-icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg">
+        h1{
+            text-align:center;
+        }
+    </style>
+    </head>
+  <body>
+    <h1>Cryptography</h1>
+    <h3>1. Encryption and Decryption</h3>
+    <p>ption and decryption
+Data that can be read and understood without any special measures is called
+plaintext or cleartext. The method of disguising plaintext in such a way as to
+hide its substance is called encryption. Encrypting plaintext results in
+unreadable gibberish called ciphertext. You use encryption to make sure that
+information is hidden from anyone for whom it is not intended, even those
+who can see the encrypted data. The process of reverting ciphertext to its
+original plaintext is called decryption.</p>
+    <h3>2. What is cryptography?</h3>
+    <p>Cryptography is the science of using mathematics to encrypt and decrypt data.
+Cryptography enables you to store sensitive information or transmit it across
+insecure networks (like the Internet) so that it cannot be read by anyone except
+the intended recipient.<br>
+  While cryptography is the science of securing data, cryptanalysis is the science
+of analyzing and breaking secure communication. Classical cryptanalysis
+involves an interesting combination of analytical reasoning, application of
+mathematical tools, pattern finding, patience, determination, and luck.
+Cryptanalysts are also called attackers.<br>
+Cryptology embraces both cryptography and cryptanalysis
+      
+</p>
+    
+ <h3>3. How does cryptography work?</h3>   
+  <p>A cryptographic algorithm, or cipher, is a mathematical function used in the
+encryption and decryption process. A cryptographic algorithm works in
+combination with a key—a word, number, or phrase—to encrypt the plaintext.
+The same plaintext encrypts to different ciphertext with different keys. The
+security of encrypted data is entirely dependent on two things: the strength of
+the cryptographic algorithm and the secrecy of the key.<br>
+A cryptographic algorithm, plus all possible keys and all the protocols that
+make it work, comprise a cryptosystem. PGP is a cryptosystem.
+    In conventional cryptography, also called secret-key or symmetric-key
+encryption, one key is used both for encryption and decryption. The Data
+Encryption Standard (DES) is an example of a conventional cryptosystem that
+is widely employed by the U.S. government. 
+    
+    </p> 
+    
+    <h3>Caesar’s cipher</h3>
+    <p>An extremely simple example of conventional cryptography is a substitution
+cipher. A substitution cipher substitutes one piece of information for another.
+This is most frequently done by offsetting letters of the alphabet. Two examples
+are Captain Midnight’s Secret Decoder Ring, which you may have owned when
+you were a kid, and Julius Caesar’s cipher. In both cases, the algorithm is to
+offset the alphabet and the key is the number of characters to offset it.<br>
+      For example, if we encode the word “SECRET” using Caesar’s key value of 3,
+we offset the alphabet so that the 3rd letter down (D) begins the alphabet.
+So starting with<br><br>
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ<br><br>
+      and sliding everything up by 3, you get<br><br>
+DEFGHIJKLMNOPQRSTUVWXYZABC<br><br>
+      
+      where D=A, E=B, F=C, and so on.<br><br>
+Using this scheme, the plaintext, “SECRET” encrypts as “VHFUHW.” To
+allow someone else to read the ciphertext, you tell them that the key is 3.
+Obviously, this is exceedingly weak cryptography by today’s standards, but
+hey, it worked for Caesar, and it illustrates how conventional cryptography
+works.
+      
+    
+    
+    
+    </p>
+<h3>Key management and conventional encryption0</h3>    
+    <p>Conventional encryption has benefits. It is very fast. It is especially useful for
+encrypting data that is not going anywhere. However, conventional
+encryption alone as a means for transmitting secure data can be quite
+expensive simply due to the difficulty of secure key distribution.<br>
+Recall a character from your favorite spy movie: the person with a locked
+briefcase handcuffed to his or her wrist. What is in the briefcase, anyway? It’s
+probably not the missile launch code/biotoxin formula/invasion plan itself.
+It’s the key that will decrypt the secret data.<br>
+For a sender and recipient to communicate securely using conventional
+encryption, they must agree upon a key and keep it secret between
+themselves. If they are in different physical locations, they must trust a courier,
+the Bat Phone, or some other secure communications medium to prevent the
+disclosure of the secret key during transmission. Anyone who overhears or
+intercepts the key in transit can later read, modify, and forge all information
+encrypted or authenticated with that key. From DES to Captain Midnight’s
+Secret Decoder Ring, the persistent problem with conventional encryption is
+key distribution: how do you get the key to the recipient without someone
+intercepting it?</p>
+    
+    <h3>Public key cryptography</h3>
+    <p>
+      The problems of key distribution are solved by public key cryptography, the
+concept of which was introduced by Whitfield Diffie and Martin Hellman in
+1975. (There is now evidence that the British Secret Service invented it a few
+years before Diffie and Hellman, but kept it a military secret—and did nothing
+with it.)<br>
+      Public key cryptography is an asymmetric scheme that uses a pair of keys for
+encryption: a public key, which encrypts data, and a corresponding private key
+(secret key) for decryption. You publish your public key to the world while
+keeping your private key secret. Anyone with a copy of your public key can then
+encrypt information that only you can read. Even people you have never met.<br>
+      It is computationally infeasible to deduce the private key from the public key.
+Anyone who has a public key can encrypt information but cannot decrypt it.
+Only the person who has the corresponding private key can decrypt the
+information.
+      The primary benefit of public key cryptography is that it allows people who
+have no preexisting security arrangement to exchange messages securely. The
+need for sender and receiver to share secret keys via some secure channel is
+eliminated; all communications involve only public keys, and no private key
+is ever transmitted or shared. Some examples of public-key cryptosystems are
+Elgamal (named for its inventor, Taher Elgamal), RSA (named for its
+inventors, Ron Rivest, Adi Shamir, and Leonard Adleman), Diffie-Hellman
+(named, you guessed it, for its inventors), and DSA, the Digital Signature
+Algorithm, (invented by David Kravitz).
+      Because conventional cryptography was once the only available means for
+relaying secret information, the expense of secure channels and key
+distribution relegated its use only to those who could afford it, such as
+governments and large banks (or small children with secret decoder rings).
+Public-key encryption is the technological revolution that provides strong
+cryptography to the adult masses. Remember the courier with the locked
+briefcase handcuffed to his wrist? Public-key encryption puts him out of
+business (probably to his relief).
+    </p>
+    
+    
+    </body>
+  </html>
