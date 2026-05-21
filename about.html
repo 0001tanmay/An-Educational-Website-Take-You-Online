@@ -1,78 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About Us</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-   <link rel="icon" type="image/x-icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg">
-  <style>
-    body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-section h2 {
-  margin-bottom: 10px;
-}
-
-footer {
-  background-color: #f5f5f5;
-  color: #333;
-  padding: 10px;
-  text-align: center;
-}
-
-    
-    </style>
-  
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Take You Online collective—mission, methods, and how we keep CS education honest." />
+  <title>About · Take You Online</title>
+  <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <header>
-    <h1>About Us</h1>
+  <a class="visually-hidden" href="#story">Skip to article</a>
+  <header class="site-header" role="banner">
+    <a class="site-logo" href="index.html">Take You Online</a>
+    <button type="button" class="site-nav-toggle" data-nav-toggle aria-controls="about-nav-drawer" aria-expanded="false" aria-label="Open menu"></button>
+    <nav class="site-nav" id="about-nav-drawer" data-nav-drawer aria-label="About navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#paths">Tracks</a>
+      <a href="index.html#practice">Practice</a>
+      <a href="#story">Story</a>
+      <a href="mailto:tanmay786tripathi@gmail.com" class="nav-cta">Write us</a>
+    </nav>
   </header>
-  <main>
-    <section>
-      <h2>Welcome to Our Educational Website</h2>
-      <p>
-       We are the group of the people which aim to increse the level of study material.In "Take_You_Onlne" group all the people of Computer Science background and having good knowlwnde in there field.
+
+  <main id="story" class="page-hero edge">
+    <div class="wrap">
+      <p class="section-eyebrow" data-reveal>Collective</p>
+      <h1 class="section-heading hero-title font-display" data-reveal>CS educators. Systems thinkers.</h1>
+      <p class="section-lede" data-reveal>
+        We are builders and mentors from computer science lanes who believe materials should whisper rigor—not shout hashtags. Gateways to programming mastery, GATE discipline, and pattern libraries tuned for longevity.
       </p>
-    </section>
-    <section>
-      <h2>Our Mission</h2>
-      <p>
-       Our website focouse on programming part of computer science and also core subject of computer science, we help to provide best content for gate exam and programming and also provide practice question for building concepts more logically.
-      </p>
-    </section>
-    <section>
-      <h2>Support</h2>
-      <p>
-       If you want to help us for building this website more effect for user or want to give any suggestion please mail us:
-        <h3>Email_Id: <a href="">tanmay786tripathi@gmail.com</a></h3>
-      </p>
-    </section>
+      <div class="two-col" style="margin-top: 3rem;">
+        <section class="manifesto-cards">
+          <div class="manifest-card" data-reveal>
+            <strong>Signal over noise.</strong>
+            <span>Every narrative we ship is calibrated: concept before shortcut, intuition before mnemonic. If it cannot withstand a student's “why?” we rewrite it.</span>
+          </div>
+          <div class="manifest-card" data-reveal>
+            <strong>Continuity of practice.</strong>
+            <span>Blogs deepen understanding; GATE hubs sequence core CS; drills reveal blind spots. They are arcs of one story—not isolated PDFs dated 2019.</span>
+          </div>
+          <div class="manifest-card" data-reveal>
+            <strong>Human contact.</strong>
+            <span>Mail <a href="mailto:tanmay786tripathi@gmail.com">tanmay786tripathi@gmail.com</a> or call <a href="tel:+919140776763">9140776763</a> with curriculum requests, mentorship asks, or content you'd like synthesized.</span>
+          </div>
+        </section>
+        <aside class="lesson" style="align-self: stretch;">
+          <h2 style="margin-top: 0;">Field notes</h2>
+          <ul>
+            <li>We obsess over multilingual learners—explain once, scaffold twice.</li>
+            <li>Security and OS topics stay paired; networks never ship without cryptography context.</li>
+            <li>Interview loops borrow from GATE clarity so both tracks reinforce.</li>
+          </ul>
+          <div class="lesson-tags">
+            <a href="index.html#courses">Courses</a>
+            <a href="index.html#gate">GATE atlas</a>
+            <a href="dsa.html">DS&amp;A</a>
+          </div>
+        </aside>
+      </div>
+      <footer class="credit-row hub-meta-foot" style="border: 0;">
+        <span><strong>Take You Online</strong> — education that scales like a flagship launch narrative.</span>
+        <span><a href="index.html">← Return home</a></span>
+      </footer>
+    </div>
   </main>
-  <footer>
-    <p>&copy; Take_You_Online. All rights reserved.</p>
-  </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>

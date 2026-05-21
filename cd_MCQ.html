@@ -1,110 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <link rel="icon" type="image/x-icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg">
-  <style>
-    body {
-  background: #e0e5ec;
-}
-h1 {
-  position: relative;
-  text-align: center;
-  color: #353535;
-  font-size: 50px;
-  font-family: "Cormorant Garamond", serif;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 18px;
-  color: #676767;
-}
-.frame {
-  width: 90%;
-  margin: 40px auto;
-  text-align: center;
-}
-button {
-  margin: 20px;
- font-size: 20px;
-}
-.custom-btn {
-  width: 200px;
-  height: 100px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-
-
-/* 9 */
-.btn-9 {
-  border: none;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.btn-9:after {
-  position: absolute;
-  content: " ";
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-   background-color: #1fd1f9;
-background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-  transition: all 0.3s ease;
-}
-.btn-9:hover {
-  background: transparent;
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-  color: #fff;
-}
-.btn-9:hover:after {
-  -webkit-transform: scale(2) rotate(180deg);
-  transform: scale(2) rotate(180deg);
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-}
-
-    </style>
-  
-  </head>
-  <body>
-<header>
-  
-
-<h1>Compiler Design</h1>
-
-<div class="frame">
-
-   <a href="C_Language.html"><button class="custom-btn btn-9">Lexical Analysis</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Parsing</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Syntax-directed Translation</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Intermediate Code Generation</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Runtime Environment</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Matching</button></a>
-
-  <p style="font-family: Andale Mono, monospace;"></p>
-</div>
-    
-    </body>
-  </html>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compiler Design · Practice · Take You Online</title>
+  <meta name="description" content="Lexing, parsing IR, optimizations—compilation as curated translation." />
+  <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=Syne:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a class="site-logo" href="index.html">Take You Online</a>
+    <button type="button" class="site-nav-toggle" data-nav-toggle aria-controls="nav-cd" aria-expanded="false" aria-label="Menu"></button>
+    <nav class="site-nav" id="nav-cd" data-nav-drawer>
+      <a href="index.html">Home</a>
+      <a href="toc_MCQ.html">TOC</a>
+      <a href="os_MCQ.html">Runtime glue</a>
+      <a href="coa.html" class="nav-cta">COA</a>
+    </nav>
+  </header>
+  <main class="topic-hub-main wrap edge">
+    <p class="hub-kicker">Arena</p>
+    <h1>Compiler design</h1>
+    <p class="hub-intro">
+      Compilers are product managers for meaning—gather tokens, certify syntax, refactor into semantics, whisper machine instructions. GATE loves the journey from regex to SSA glimpses.
+    </p>
+    <div class="lesson-blocks">
+      <article class="lesson">
+        <h2>Front-end rituals</h2>
+        <ul>
+          <li>Lexer graphs, lookahead, conflict resolution narratives.</li>
+          <li>Parser families; attribute grammars bridging to semantics.</li>
+        </ul>
+        <div class="lesson-tags"><a href="toc_MCQ.html">Language classes</a><a href="CLanguage_MCQ.html">ABI literacy</a></div>
+      </article>
+      <article class="lesson">
+        <h2>Middle-earth IR</h2>
+        <ul>
+          <li>Intermediate forms that preserve control flow yet enable transforms.</li>
+          <li>Symbol tables threaded with scopes—not flat dictionaries.</li>
+        </ul>
+      </article>
+      <article class="lesson">
+        <h2>Back-end poetry</h2>
+        <ul>
+          <li>Instruction selection, register allocation melodrama, peephole cadence.</li>
+          <li>Link COA stalls with compiler scheduling folklore.</li>
+        </ul>
+        <div class="lesson-tags"><a href="coa.html">COA atlas</a><a href="os_MCQ.html">Loaders</a></div>
+      </article>
+    </div>
+    <footer class="hub-meta-foot">
+      <span><strong>Studio tip:</strong> trace one Hello World nightly across phases.</span>
+      <span><a href="index.html#practice">Practice grid</a></span>
+    </footer>
+  </main>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

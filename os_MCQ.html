@@ -1,113 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <link rel="icon" type="image/x-icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg">
-  <style>
-    body {
-  background: #e0e5ec;
-}
-h1 {
-  position: relative;
-  text-align: center;
-  color: #353535;
-  font-size: 50px;
-  font-family: "Cormorant Garamond", serif;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  font-size: 18px;
-  color: #676767;
-}
-.frame {
-  width: 90%;
-  margin: 40px auto;
-  text-align: center;
-}
-button {
-  margin: 20px;
- font-size: 20px;
-}
-.custom-btn {
-  width: 200px;
-  height: 100px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-
-
-/* 9 */
-.btn-9 {
-  border: none;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.btn-9:after {
-  position: absolute;
-  content: " ";
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-   background-color: #1fd1f9;
-background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-  transition: all 0.3s ease;
-}
-.btn-9:hover {
-  background: transparent;
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-  color: #fff;
-}
-.btn-9:hover:after {
-  -webkit-transform: scale(2) rotate(180deg);
-  transform: scale(2) rotate(180deg);
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-}
-
-    </style>
-  
-  </head>
-  <body>
-<header>
-  
-
-<h1>Operating System</h1>
-
-<div class="frame">
-
-   <a href="C_Language.html"><button class="custom-btn btn-9">Process</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">CPU Scheduling</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Process Synchronization</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Deadlock</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Memory Management</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">File System</button></a>
-   <a href="C_Language.html"><button class="custom-btn btn-9">Disk Scheduling</button></a>
-     <a href="C_Language.html"><button class="custom-btn btn-9">System Call</button></a>
-     <a href="C_Language.html"><button class="custom-btn btn-9">Thread</button></a>
-
-  <p style="font-family: Andale Mono, monospace;"></p>
-</div>
-    
-    </body>
-  </html>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Operating Systems · Practice · Take You Online</title>
+  <meta name="description" content="Processes, synchronization, memory, filesystems—I/O folklore for GATE OS depth." />
+  <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&family=Syne:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a class="site-logo" href="index.html">Take You Online</a>
+    <button type="button" class="site-nav-toggle" data-nav-toggle aria-controls="nav-os" aria-expanded="false" aria-label="Menu"></button>
+    <nav class="site-nav" id="nav-os" data-nav-drawer>
+      <a href="index.html">Home</a>
+      <a href="coa.html">Hardware</a>
+      <a href="cn_MCQ.html">Distributed</a>
+      <a href="cd_MCQ.html" class="nav-cta">Compilers</a>
+    </nav>
+  </header>
+  <main class="topic-hub-main wrap edge">
+    <p class="hub-kicker">Arena</p>
+    <h1>Operating systems</h1>
+    <p class="hub-intro">
+      Operating systems adjudicate scarcity. Master them by narrating invariants inside schedulers, page tables, and journals—truth survives reboots because kernels never gaslight disks.
+    </p>
+    <div class="lesson-blocks">
+      <article class="lesson">
+        <h2>Process &amp; thread theater</h2>
+        <ul>
+          <li>Lifecycle choreography: fork/exec vs spawn models across OS families.</li>
+          <li>Scheduling lenses—interactive latency vs cluster throughput equity.</li>
+        </ul>
+        <div class="lesson-tags"><a href="C_Language.html">syscalls labs</a><a href="coa.html">timer hardware</a></div>
+      </article>
+      <article class="lesson">
+        <h2>Synchronization noir</h2>
+        <ul>
+          <li>Mutex/semaphore calculus; deadlock detection narratives.</li>
+          <li>RCU glimpses bridging into modern kernels.</li>
+        </ul>
+      </article>
+      <article class="lesson">
+        <h2>Memory &amp; storage verse</h2>
+        <ul>
+          <li>Virtual memory drama: TLB choreography, eviction ethics.</li>
+          <li>Filesystem journals + WAL cousins to DBMS.</li>
+        </ul>
+        <div class="lesson-tags"><a href="Dbms_MCQ.html">Transactions</a><a href="cn_MCQ.html">Network FS</a></div>
+      </article>
+    </div>
+    <footer class="hub-meta-foot">
+      <span><strong>Loop:</strong> pair reading with strace journaling.</span>
+      <span><a href="index.html#practice">Practice grid</a></span>
+    </footer>
+  </main>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

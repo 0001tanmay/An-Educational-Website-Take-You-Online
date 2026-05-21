@@ -1,84 +1,75 @@
-<!DOCTYPE>
-<html>
-  <head>
-    <link rel="icon" type="image/x-icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg">
-    <style>
-        h1{
-            text-align:center;
-        }
-    </style>
-    </head>
-  
-  <body>
-    <h1>Cascading Style Sheets (CSS)</h1>
-    <h3>1. CSS Introduction</h3>
-    <p>
-     <ul> 
-      <li>
-      Cascading Style Sheets (CSS)</li>
-<ul>
-<li>Used to describe the presentation of documents</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS · Presentation systems · Take You Online</title>
+  <meta name="description" content="Layouts, cascades, custom properties, motion ethics—designing education surfaces that behave like flagship launch sites." />
+  <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;1,9..40,400&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <aside class="site-blog-bar" role="banner">
+    <span class="brand">Take You Online</span>
+    <nav aria-label="Article">
+      <a href="index.html">Home</a>
+      <a href="HTML_blog.html">HTML</a>
+      <a href="Python_blog.html">Python</a>
+      <a href="CPP_blog.html">C++</a>
+      <a href="Cryptography_blog.html">Crypto</a>
+    </nav>
+  </aside>
 
-<li>Define sizes, spacing, fonts, colors, layout, etc.</li>
+  <article class="doc-shell wrap edge">
+    <header class="doc-hero section--elevate" style="border-radius: var(--radius-xl); padding: clamp(2rem, 5vw, 3rem); border: 1px solid var(--line); margin-bottom: 2rem;">
+      <p class="doc-kicker">Cascade &amp; orchestration</p>
+      <h1>CSS · motion informed by restraint</h1>
+      <p class="lede-large">Stylesheets steer perception: negative space pacing, kinetic hierarchy, breakpoints that glide via fluid typography. Apple- and Samsung-grade polish is less “library du jour” and more disciplined spacing, contrast, blur, shadows tuned for retina versus classroom projectors alike.</p>
+    </header>
 
-<li>Improve content accessibility</li>
+    <div class="doc-article section--elevate">
+      <h2>Cascade as policy stack</h2>
+      <p>Selectors, specificity order, layering (<code>@layer</code>), and cascade origins describe who wins collisions. Compose design tokens (<code>:root</code> custom props) early—education brands pivot themes without archaeology.</p>
 
-<li>Improve flexibility</li></ul>
-
-<li>Designed to separate presentation from content
-</li>
-<li>Due to CSS, all HTML presentation tags and
-attributes are deprecated, e.g. font, center,
-etc.</li>
-      </ul>
-    </p>
-   
-    <h3>CSS Simple, or Element Selectors</h3>
-    <p>
+      <h2>Structural toolkit</h2>
       <ul>
-        <li>The most basic form of CSS selector is an XHTML
-element name;<br>
+        <li><strong>Grid</strong>: asymmetrical storytelling—heroes, KPI strips, juxtaposed coursework cards.</li>
+        <li><strong>Flex</strong>: rhythmic nav bars and stacked glossary rows.</li>
+        <li><strong>clamp()</strong> + modular scale: tame ultra-wide desktops without spawning dozens of breakpoints.</li>
+      </ul>
 
-h1, h2, p, ol, ul, table, etc.</li>
-        <li>This is the simple or element selector. Example:<br>
+      <h2>Pocket recipe · token-ready button</h2>
+<pre><code>.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: clamp(0.75rem, 2vw, 0.95rem)
+           clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: 999px;
+  background: var(--accent);
+  color: #031016;
+  box-shadow: 0 20px 50px rgba(46, 228, 168, 0.28);
+}</code></pre>
 
-p { color: #003366; }</li>
-        <li>This will set every occurrence of content marked
-up the 'p' paragraph tag to be a dark blue colour.</li>
-        </ul>
-      </p>
+      <h2>Inclusive animation</h2>
+      <p>Prefer transforms and opacity choreography; throttle transitions under <code>prefers-reduced-motion: reduce</code>; never hinge comprehension on shimmering flourishes learners cannot perceive.</p>
 
-<h3>CSS CLASS SELECTOR</h3>
-<p>However, in XHTML markup, elements can
-have class attributes assigned to them. The
-value attached to a class attribute can be one
-(or more) names, separated by spaces.
-Example:
-<xmp><h1 class=“special”></xmp>
-  The actual definition of the value “special” is defined
-in a CSS class selector…
+      <div class="doc-callout">
+        Inspect each module on OLED black, dusty classroom projector, and mobile sunlight—color contrast regressions lurk precisely where hero gradients seduce marketers.
+      </div>
 
-</p>
-  
-<h3>CSS ID Selectors</h3>
-<p><ul>
- <li> XHTML elements can also have id selectors assigned to them.
-Example:
+      <h2>Maintaining performance discipline</h2>
+      <p>Defer non-critical cascades; scope expensive selectors; hydrate only after HTML paints meaningfully. Lightweight education sites owe learners fast repeat visits during cram windows.</p>
 
-<xmp><p id=“summary”>blah, blah, blah.</p></xmp></li>
-
-<li>In the CSS, the id “summary” can be styled in a rule, thus:
-
-<xmp>#summary { font-style: italic; }</xmp></li>
-
-<li>Whereas class selectors can be used across a number of
-elements in an XHTML document, ID selectors can only be
-assigned to one specific element in any given XHTML
-document.</li>
-</p>
-
-
-
-
-    </body>
-  </html>
+      <footer class="doc-next">
+        <a class="btn btn-primary" href="HTML_blog.html">Back to semantics</a>
+        <a class="btn btn-secondary" href="Cryptography_blog.html">Security lens</a>
+        <a class="btn btn-secondary" href="index.html#courses">Courses</a>
+      </footer>
+    </div>
+  </article>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
