@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cryptography · Trust engineering · Take You Online</title>
-  <meta name="description" content="Symmetric and public-key foundations, authenticity, TLS-shaped mental maps—education-grade cryptography prose." />
+  <meta name="description" content="Symmetric and public-key crypto, hashing, AEAD/TLS instincts, entropy, signatures, and GATE-friendly threat framing—education-grade cryptography prose." />
   <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/00/99/98/14/1000_F_99981436_kAbBqwOKn0KPBD8XtAqPfg5jf7yTFhep.jpg" type="image/jpeg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +19,7 @@
       <a href="cn_MCQ.html">Networks</a>
       <a href="Python_blog.html">Python</a>
       <a href="CPP_blog.html">C++</a>
+      <a href="CSS_blog.html">CSS</a>
       <a href="#topics">Topics</a>
     </nav>
   </aside>
@@ -42,7 +43,7 @@
       <p>AES-GCM, ChaCha20-Poly1305, classic stream modes—bulk protection once endpoints synchronize keys. Operational discipline: randomized IVs/nonces unique per invocation; duplication collapses keystream secrecy.</p>
 
       <h2>Public-key choreography</h2>
-      <p>RSA eras, ECC density, ECDHE handshakes, hybrid post-quantum experiments—distribution without couriers handcuffed to briefcases. Pedagogically Caesar ciphers visualize frequency attacks and motivate Kerckhoffs’ maxim: adversaries know algorithms; secrecy lives strictly in keys.</p>
+      <p>RSA-era factoring hardness, ECC density and curve choices, ECDHE handshakes, hybrid post-quantum experiments—key distribution without couriers handcuffed to briefcases. Pedagogically Caesar ciphers visualize frequency attacks and motivate Kerckhoffs’ maxim: adversaries know algorithms; secrecy lives strictly in keys.</p>
 
 <pre><code># toy Caesar shift — pedagogy only, never security
 def rotate(text: str, k: int) -> str:
@@ -62,8 +63,35 @@ def rotate(text: str, k: int) -> str:
         Encryption without authenticated associated data leaks integrity; TLS record layers marry both—copy that instinct into every bespoke JSON token scheme you sketch.
       </div>
 
+      <h2>Hashes, MACs, and bit budgets</h2>
+      <p>Cryptographic hashes shrink messages into fixed-length digests for integrity checks and Merkle trees—yet MD5/SHA-1 are historical footnotes beside SHA-256/BLAKE-class designs. Birthday collision search for an <em>n</em>-bit hash needs on the order of 2<sup><em>n</em>/2</sup> trials—not 2<sup><em>n</em></sup>—so doubling bit width buys more than double the safety margin.</p>
+      <ul>
+        <li><strong>MAC / HMAC:</strong> keyed tags detect tampering inside closed systems sharing secrets.</li>
+        <li><strong>AEAD suites:</strong> marry encryption + authenticity (GCM tags, Poly1305) so attackers cannot splice ciphertext without alarms.</li>
+      </ul>
+
+
+      <h2>Passwords need slow KDFs—not “encryption”</h2>
+      <p>Human-selected passwords carry thin entropy compared to RNG keys—defenses stack unique salts plus memory-hard Argon2 (or calibrated scrypt/bcrypt workloads). Reversible password “encryption” usually fails once the database and key material stroll together offline.</p>
+
+      <h2>Signatures, certificates, freshness</h2>
+      <p>Asymmetric signing keys anchor trust for software releases and HTTPS: verification chains prove only as strong as root stores, revocation plumbing, and pinning policies allow. Pair signatures with freshness signals (nonces, anti-replay windows) lest captured payloads replay unnoticed.</p>
+
+      <h2>Entropy discipline</h2>
+      <p>Platform CPRNG APIs (<code>getrandom</code>, BCrypt APIs on Windows, Python’s <code>secrets</code>) beat ad-harvested mouse wiggles unless you consciously model entropy pooling. Statistical health checks matter on embedded MCU labs where RNG gates fail softly.</p>
+
+      <h2>Threat sketches every answer should carry</h2>
+      <p>Name actors (global passive adversary, rogue Wi-Fi café, insiders with packet capture), enumerate assets (session cookies, LMS grades), cite channels (HTTPS, QUIC WebTransport). Cryptography aligns with governance—perfect TLS cannot stop phishing that clones your OTP capture page.</p>
+
+      <div class="doc-callout">
+        <strong>Invention rule:</strong> before shipping “lightweight JWT encryption,” sanity-check AEAD framing, issuer audience claims, revocation, rotation, and downgrade stories—novel token schemes regress to TLS-era mistakes fast.
+      </div>
+
       <h2>Protocol sociology</h2>
-      <p>TLS verifies certificate graphs resists downgrade; messenger ratchets blend forward secrecy with social trust bootstrapping. Engineering security is choreography between math and human operations—revocation, pinning, transparency logs.</p>
+      <p>TLS authenticates endpoints via PKIX certificate graphs, binds negotiated suites against downgrade ladders, mixes long-lived authenticity with ephemeral forward secrecy wherever ECDHE participates. Messaging ratchets (Signal-style) chain forward secrecy to social onboarding rituals. Humans still revoke, pin, mistrust intermediates, argue over transparency logs—engineering security stitches math into operations calendars.</p>
+
+      <h2>Quantum and curriculum hooks</h2>
+      <p>Post-quantum hybrids (classical ECDHE beside lattice/KEM payloads) occupy wire formats today—not science fiction—for early adopters. Pair this article with discrete math streams on modular arithmetic (<a href="dsa.html">DS&amp;A</a> complements) when you crave formal asymptotics beneath real protocols.</p>
 
       <footer class="doc-next">
         <a class="btn btn-primary" href="cn_MCQ.html">Computer networks hub</a>

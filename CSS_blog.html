@@ -63,6 +63,48 @@
       <h2>Maintaining performance discipline</h2>
       <p>Defer non-critical cascades; scope expensive selectors; hydrate only after HTML paints meaningfully. Lightweight education sites owe learners fast repeat visits during cram windows.</p>
 
+      <h2>Custom properties vs. preprocessor variables</h2>
+      <p><code>:root</code> tokens cascade and respond to DOM context—perfect for themes toggled via class on <code>html</code> or media queries (<code>prefers-color-scheme</code>). Sass-like variables flatten at compile time; both have seats at the table, but shipped CSS variables enable runtime palettes without rebuilding asset graphs.</p>
+
+      <h2>Logical properties and international readiness</h2>
+      <p><code>margin-inline</code>, <code>padding-inline</code>, <code>border-inline-start</code> survive RTL rotations without swapping every rule. Mirror that mindset for asymmetric layouts powering bilingual cohorts without forked stylesheets.</p>
+
+      <h2>Modern layering with <code>@layer</code></h2>
+      <pre><code>@layer reset, tokens, components, utilities;
+
+@layer utilities {
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+}</code></pre>
+      <p>Ordering layers declares intent—“who may override whom”—shrinking specificity arms races (<code>#id</code> hammering).</p>
+
+      <h2>Container queries complement breakpoints</h2>
+      <p>When reusable cards migrate from wide heroes to cramped sidebars, <code>@container</code> rules let typography and grid tracks respond to component width instead of guessing from viewport alone—ideal for LMS widgets embedded unpredictably.</p>
+
+      <h2>Responsive type without breakpoint spam</h2>
+      <pre><code>:root {
+  --step-body: clamp(1rem, 0.94rem + 0.35vw, 1.125rem);
+  --step-display: clamp(2.05rem, 1.62rem + 1.95vw, 3.05rem);
+}
+
+.doc-article {
+  font-size: var(--step-body);
+}</code></pre>
+
+      <h2>Dark palettes and systemic contrast</h2>
+      <p>Honor <code>prefers-color-scheme: dark</code> with token swaps, but recompute contrast anew—neon greens adored in light UI often fail WCAG shadows on OLED. Prefer subtle surfaces over pure black slabs that halation around text.</p>
+
+      <div class="doc-callout">
+        Motion, color, typography—budget each as constrained resources. Borrow Apple-grade polish via rhythm and restraint rather than gratuitous shaders that torch thermals mid-scroll on classroom laptops.
+      </div>
+
       <footer class="doc-next">
         <a class="btn btn-primary" href="HTML_blog.html">Back to semantics</a>
         <a class="btn btn-secondary" href="Cryptography_blog.html">Security lens</a>

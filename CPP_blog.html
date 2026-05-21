@@ -74,6 +74,39 @@ int main() {
         <li>Templates error messages escalate—readable boundaries via concepts and restraint.</li>
       </ul>
 
+      <h2>Memory tiers in one breath</h2>
+      <p>Automatic locals and call frames live alongside the stack—fast, scoped lifetimes; dynamic lifetimes gravitate toward the heap via <code>new</code>/<code>malloc</code> kin (prefer smart pointers instead of raw juggling). BSS/data hold globals and static-storage duration objects; literal strings may live in read-only mappings. Connecting this map with virtual memory lectures from <a href="coa.html">COA</a> anchors why prefetching and false sharing sting when code “looks harmless.”</p>
+
+      <h2>STL map for nervous beginners</h2>
+      <ul>
+        <li><strong><code>std::vector</code></strong>: contiguous amortized push; beware iterator invalidation after growth.</li>
+        <li><strong><code>std::string_view</code></strong>: non-owning observers—lifetime discipline is on you.</li>
+        <li><strong><code>std::unordered_map</code></strong>: average fast lookups; hashing quality matters adversarially but rarely pedagogically.</li>
+        <li><strong><code>std::optional</code> / <code>std::variant</code></strong>: model partial results and algebraic shapes without sentinel magic numbers.</li>
+      </ul>
+
+      <h2>References versus pointers—and when each lies</h2>
+      <p>References disguise addresses with syntax sugar (<code>.</code> chaining, no reassignment semantics); pointers expose arithmetic and reassignment—which is expressive for traversing graphs but hazardous without invariants. In modern codebases, pointers appear at ABI boundaries while references carry internal contracts—as long as they never alias expired storage.</p>
+
+      <h2>Const correctness is documentation that compiles</h2>
+      <pre><code>#include &lt;vector&gt;
+
+double mean(const std::vector&lt;int&gt;&amp; nums) noexcept {
+    if (nums.empty()) return 0.0;
+    long long acc = 0;
+    for (int x : nums) acc += x;
+    return static_cast&lt;double&gt;(acc) / nums.size();
+}
+</code></pre>
+      <p>Mark immutable parameters <code>const&amp;</code> to widen sharing without copies; annotate methods <code>const</code> when they uphold logical immutability so accidental mutation trips the compiler—not your future self at 02:00 before mock GATE.</p>
+
+      <h2>Move semantics in a paragraph</h2>
+      <p>Sometimes cheap “copy” constructs by <strong>stealing resources</strong> (heap buffers, file handles): rvalue references flag expiring temporaries enabling moves. Respect the Rule of Five when you customize destruction—exceptions, moves, swaps, copy—because half-implemented RAII shells rot quietly until sanitizers shout.</p>
+
+      <div class="doc-callout">
+        <strong>Weekly drill:</strong> pick one Clang/GCC diagnostic you fear (template instantiation cliffs, narrowing conversions) and solve it bare-handed before hiding behind macros—pain now pays in OS and compiler GATE stems.
+      </div>
+
       <h2>Cross-links inside Take You Online</h2>
       <p>Warm foundations on <a href="C_Language.html">C quizzes</a>, formalize compilers with <a href="cd_MCQ.html">compiler design arenas</a>, align memory stories with <a href="coa.html">COA notes</a> and <a href="os_MCQ.html">operating-system narratives</a>.</p>
 

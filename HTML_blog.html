@@ -69,6 +69,36 @@
       <h2>Habits worth installing</h2>
       <p>Validators and axe-style audits catch heading skips early; forbid placeholder-only labeling; annotate live regions sparingly yet intentionally for dynamic quizzes.</p>
 
+      <h2>Forms: where user intent becomes bytes</h2>
+      <p>Inputs must carry deterministic <strong>names</strong> into server or client routers; radios/checkboxes expose value sets; selects group options logically. Prefer explicit <code>label for=...</code> binding over orphaned placeholders—assistive stacks announce labels even when placeholders vanish mid-typing.</p>
+      <ul>
+        <li><strong><code>method="GET"</code>:</strong> idempotent reads; payloads appear in URLs and logs—fine for searches, careless for passwords.</li>
+        <li><strong><code>method="POST"</code>:</strong> bodies carry heavier state; pair with CSRF defenses when authenticated.</li>
+        <li><strong>Client validation</strong> is UX sugar; authoritative validation happens server-side (or mirrored in trusted WASM)—never trust the browser alone for integrity.</li>
+      </ul>
+
+      <h2>Metadata learners actually notice</h2>
+      <p><code>&lt;title&gt;</code> and descriptive <code>meta name="description"</code> power search snippets; social cards lean on OpenGraph/Twitter equivalents when you syndicate coursework pages. Charset and viewport declarations belong first in <code>&lt;head&gt;</code> to avoid ambiguous parsing flashes on slow networks.</p>
+
+      <h2>Media semantics</h2>
+      <pre><code>&lt;figure&gt;
+  &lt;img src="memory-map.svg" width="820" height="520"
+       alt="Diagram mapping virtual to physical RAM pages." loading="lazy" decoding="async" /&gt;
+  &lt;figcaption&gt;
+    Annotate GATE-style memory hierarchies alt-text-first; sighted learners get captions with exam vocabulary.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+      <h2>Security-flavored primitives</h2>
+      <p>Outbound links targeting new browsing contexts merit <code>rel="noopener noreferrer"</code>; user-generated snippets demand escaping—prefer framework defaults over hand-rolled substitutions. Sensitive flows avoid embedding secrets in markup (attributes leak to extensions and logs).</p>
+
+      <h2>Tables aren’t villains—misuse is</h2>
+      <p>When tabular comparisons (topic coverage, GATE weighting) outperform card stacks, revive <code>&lt;table&gt;</code> with <code>&lt;th scope&gt;</code>, captions, and responsive patterns (horizontal scroll wrappers) instead of inaccessible div grids masquerading as spreadsheets.</p>
+
+      <div class="doc-callout">
+        Teach every template as <strong>two documents</strong>: one read aloud via screen reader, one visually styled. Divergence signals you’ve smuggled meaning into CSS-only channels.
+      </div>
+
       <footer class="doc-next">
         <a class="btn btn-primary" href="CSS_blog.html">Layer on CSS</a>
         <a class="btn btn-secondary" href="index.html#courses">Courses home</a>

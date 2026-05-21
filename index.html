@@ -10,8 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="prefetch" href="about.html" />
+  <link rel="prefetch" href="dsa.html" />
 </head>
-<body>
+<body class="page-home">
   <a class="visually-hidden" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -32,6 +34,11 @@
     <section class="hero edge" id="hero" aria-label="Introduction">
       <div class="hero-media" aria-hidden="true"></div>
       <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="hero-bloom" aria-hidden="true">
+        <span class="hero-orb hero-orb--a"></span>
+        <span class="hero-orb hero-orb--b"></span>
+        <span class="hero-orb hero-orb--c"></span>
+      </div>
       <div class="wrap">
         <p class="section-eyebrow hero-eyebrow" data-reveal>Computer science · GATE · Careers</p>
         <h1 class="hero-title font-display" data-reveal>Education, elevated.</h1>
@@ -94,22 +101,22 @@
             Every module is stitched into a continuum: expressive programming, GATE-grade core CS, then deliberate rehearsal with MCQs and pattern libraries that mirror exams and interviews.
           </p>
         </header>
-        <div class="paths-grid" data-reveal>
-          <article class="path-card">
+        <div class="paths-grid reveal-cascade">
+          <article class="path-card" data-reveal>
             <span class="path-card-num">01</span>
             <div class="path-card-cover path-card-cover--cyan" aria-hidden="true"></div>
             <p class="path-card-label">Fluency</p>
             <h3>Create with languages &amp; the web</h3>
             <p>Python for clarity, C/C++ for systems intuition, HTML/CSS as design engineering. Narratives that pair syntax with reasoning—how memory, scope, and the network actually behave.</p>
           </article>
-          <article class="path-card">
+          <article class="path-card" data-reveal>
             <span class="path-card-num">02</span>
             <div class="path-card-cover path-card-cover--blue" aria-hidden="true"></div>
             <p class="path-card-label">Discipline</p>
             <h3>GATE core, taught as architecture</h3>
             <p>Mathematics through algorithms, compilers, TOC, databases, OS, CN, COA, aptitude. Every idea threads back to invariant thinking: models, complexities, correctness.</p>
           </article>
-          <article class="path-card">
+          <article class="path-card" data-reveal>
             <span class="path-card-num">03</span>
             <div class="path-card-cover path-card-cover--vio" aria-hidden="true"></div>
             <p class="path-card-label">Resilience</p>
@@ -129,8 +136,8 @@
           </div>
           <a class="hero-link btn btn-secondary" href="#practice" style="flex-shrink: 0;" data-reveal>Jump to drills</a>
         </header>
-        <div class="snap-scroll" data-reveal tabindex="0" aria-label="Course carousel">
-          <article class="course-card">
+        <div class="snap-scroll reveal-cascade" tabindex="0" aria-label="Course carousel">
+          <article class="course-card" data-reveal>
             <img class="course-card-thumb" src="https://i0.wp.com/masterprograming.com/wp-content/uploads/2019/11/python-programming-in-hindi.png?fit=800%2C445&ssl=1" alt="" width="680" height="445" decoding="async" loading="lazy" />
             <div class="course-card-inner">
               <h4>Python · logic &amp; patterns</h4>
@@ -138,7 +145,7 @@
               <a class="hero-link" href="Python_blog.html">Enter track</a>
             </div>
           </article>
-          <article class="course-card">
+          <article class="course-card" data-reveal>
             <img class="course-card-thumb" src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/687167/cover-0828_AfterAllTheseYearstheWorldisStillPoweredbyCProgramming_Razvan_Newsletter-2b9ea38294bb08c5aea1f0c1cb06732f.png" alt="" width="800" height="445" decoding="async" loading="lazy" />
             <div class="course-card-inner">
               <h4>C++ · structure &amp; performance</h4>
@@ -146,7 +153,7 @@
               <a class="hero-link" href="CPP_blog.html">Enter track</a>
             </div>
           </article>
-          <article class="course-card">
+          <article class="course-card" data-reveal>
             <img class="course-card-thumb" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220630132824/HTML-Full-Form.jpg" alt="" width="800" height="450" decoding="async" loading="lazy" />
             <div class="course-card-inner">
               <h4>HTML · the document layer</h4>
@@ -154,7 +161,7 @@
               <a class="hero-link" href="HTML_blog.html">Open materials</a>
             </div>
           </article>
-          <article class="course-card">
+          <article class="course-card" data-reveal>
             <img class="course-card-thumb" src="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg" alt="" width="800" height="500" decoding="async" loading="lazy" />
             <div class="course-card-inner">
               <h4>CSS · systems of style</h4>
@@ -162,7 +169,7 @@
               <a class="hero-link" href="CSS_blog.html">Open materials</a>
             </div>
           </article>
-          <article class="course-card">
+          <article class="course-card" data-reveal>
             <img class="course-card-thumb" src="https://i0.wp.com/hackersonlineclub.com/wp-content/uploads/2019/04/Cryptography.png?fit=650%2C379&ssl=1" alt="" width="650" height="379" decoding="async" loading="lazy" />
             <div class="course-card-inner">
               <h4>Cryptography essentials</h4>
@@ -170,7 +177,7 @@
               <a class="hero-link" href="Cryptography_blog.html">Open materials</a>
             </div>
           </article>
-          <article class="course-card">
+          <article class="course-card" data-reveal>
             <img class="course-card-thumb" src="https://www.exams88.in/wp-content/uploads/2019/01/GATE-2022.jpg" alt="" width="800" height="450" decoding="async" loading="lazy" />
             <div class="course-card-inner">
               <h4>DS&amp;A · GATE &amp; interviews</h4>
@@ -191,58 +198,58 @@
             Twelve pillars—general aptitude through digital electronics—organized as study lenses. Dive into drills from the Practice grid whenever a topic needs velocity.
           </p>
         </header>
-        <div class="gate-grid" data-reveal>
-          <article class="gate-card">
+        <div class="gate-grid reveal-cascade">
+          <article class="gate-card" data-reveal>
             <h4>General aptitude</h4>
             <p>Structural numeracy and verbal inference—speed with guardrails.</p>
             <a class="hero-link" href="ga.html">Study outline</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Engineering mathematics</h4>
             <p>Linear systems, calculus for CS, discrete tools that prop up proofs.</p>
             <a class="hero-link" href="mathematics_MCQ.html">MCQ arena</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Programming &amp; DS</h4>
             <p>Pointers-to-graphs continuum; how compilers see your structs.</p>
             <a class="hero-link" href="CLanguage_MCQ.html">Practice C</a> · <a class="hero-link" href="ds_MCQ.html">Data structures</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Algorithms</h4>
             <p>Divide, conquer, and prove—with stable bridges to TOC when needed.</p>
             <a class="hero-link" href="algo_MCQ.html">MCQ arena</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Theory of computation</h4>
             <p>Languages as objects; machines as interpreters of logic.</p>
             <a class="hero-link" href="toc_MCQ.html">MCQ arena</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Compiler design</h4>
             <p>Lexing to IR—architecture of translation.</p>
             <a class="hero-link" href="cd_MCQ.html">MCQ arena</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Computer organization</h4>
             <p>From gates to ISA—timing, locality, coherence.</p>
             <a class="hero-link" href="coa.html">Study outline</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Operating systems</h4>
             <p> Processes, scheduling, memory subsystems exposed as narratives.</p>
             <a class="hero-link" href="os_MCQ.html">MCQ arena</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Database systems</h4>
             <p>Relational calculus to transactions that survive failure.</p>
             <a class="hero-link" href="Dbms_MCQ.html">MCQ arena</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Computer networks</h4>
             <p>Stacks, congestion, cryptography on the wire.</p>
             <a class="hero-link" href="cn_MCQ.html">MCQ arena</a>
           </article>
-          <article class="gate-card">
+          <article class="gate-card" data-reveal>
             <h4>Digital electronics</h4>
             <p>Boolean worlds feeding the sequential machines below your OS.</p>
             <a class="hero-link" href="de_MCQ.html">MCQ arena</a>
@@ -260,19 +267,19 @@
             Each doorway opens a distilled hub—curriculum arcs, pacing tips, fast links back into GATE context. Lightweight by design so your brain does the lifting.
           </p>
         </header>
-        <div class="tile-grid" data-reveal>
-          <a class="tile-card" href="mathematics_MCQ.html"><span>Engineering maths</span><h4>Vectors of reasoning</h4></a>
-          <a class="tile-card" href="ga.html"><span>Aptitude</span><h4>GATE qualifier lens</h4></a>
-          <a class="tile-card" href="CLanguage_MCQ.html"><span>C language</span><h4>Machines meet memory</h4></a>
-          <a class="tile-card" href="Dbms_MCQ.html"><span>DBMS</span><h4>Transactions &amp; truth</h4></a>
-          <a class="tile-card" href="ds_MCQ.html"><span>Data structures</span><h4>The shape of algorithms</h4></a>
-          <a class="tile-card" href="algo_MCQ.html"><span>Algorithms</span><h4>Proof-friendly patterns</h4></a>
-          <a class="tile-card" href="toc_MCQ.html"><span>Automata · TOC</span><h4>Languages bounded</h4></a>
-          <a class="tile-card" href="cd_MCQ.html"><span>Compiler design</span><h4>Translation craft</h4></a>
-          <a class="tile-card" href="coa.html"><span>COA</span><h4>Silicon choreography</h4></a>
-          <a class="tile-card" href="os_MCQ.html"><span>Operating systems</span><h4>Kernel stories</h4></a>
-          <a class="tile-card" href="cn_MCQ.html"><span>Networks</span><h4>Wires to worlds</h4></a>
-          <a class="tile-card" href="de_MCQ.html"><span>Digital electronics</span><h4>Signal discipline</h4></a>
+        <div class="tile-grid reveal-cascade">
+          <a class="tile-card" data-reveal href="mathematics_MCQ.html"><span>Engineering maths</span><h4>Vectors of reasoning</h4></a>
+          <a class="tile-card" data-reveal href="ga.html"><span>Aptitude</span><h4>GATE qualifier lens</h4></a>
+          <a class="tile-card" data-reveal href="CLanguage_MCQ.html"><span>C language</span><h4>Machines meet memory</h4></a>
+          <a class="tile-card" data-reveal href="Dbms_MCQ.html"><span>DBMS</span><h4>Transactions &amp; truth</h4></a>
+          <a class="tile-card" data-reveal href="ds_MCQ.html"><span>Data structures</span><h4>The shape of algorithms</h4></a>
+          <a class="tile-card" data-reveal href="algo_MCQ.html"><span>Algorithms</span><h4>Proof-friendly patterns</h4></a>
+          <a class="tile-card" data-reveal href="toc_MCQ.html"><span>Automata · TOC</span><h4>Languages bounded</h4></a>
+          <a class="tile-card" data-reveal href="cd_MCQ.html"><span>Compiler design</span><h4>Translation craft</h4></a>
+          <a class="tile-card" data-reveal href="coa.html"><span>COA</span><h4>Silicon choreography</h4></a>
+          <a class="tile-card" data-reveal href="os_MCQ.html"><span>Operating systems</span><h4>Kernel stories</h4></a>
+          <a class="tile-card" data-reveal href="cn_MCQ.html"><span>Networks</span><h4>Wires to worlds</h4></a>
+          <a class="tile-card" data-reveal href="de_MCQ.html"><span>Digital electronics</span><h4>Signal discipline</h4></a>
         </div>
       </div>
     </section>
@@ -283,22 +290,22 @@
           <p class="section-eyebrow" data-reveal>Quiet proof</p>
           <h2 class="section-heading" data-reveal>Worn by relentless optimizers.</h2>
         </header>
-        <div class="quote-grid" data-reveal>
-          <figure class="quote-card">
+        <div class="quote-grid reveal-cascade">
+          <figure class="quote-card" data-reveal>
             <blockquote>“Stacks of GATE problems finally felt ordered—concept before recall.”</blockquote>
             <figcaption class="quote-meta">
               <img src="https://cdn-icons-png.flaticon.com/512/4825/4825044.png" alt="" width="48" height="48" loading="lazy" />
               <cite><strong>Ayush Pal</strong><span>GATE-focused learner</span></cite>
             </figcaption>
           </figure>
-          <figure class="quote-card">
+          <figure class="quote-card" data-reveal>
             <blockquote>“Python notes read like mentoring, not encyclopedia dumps.”</blockquote>
             <figcaption class="quote-meta">
               <img src="https://cdn-icons-png.flaticon.com/512/4825/4825015.png" alt="" width="48" height="48" loading="lazy" />
               <cite><strong>Shaurya Pratap Singh</strong><span>Developer track</span></cite>
             </figcaption>
           </figure>
-          <figure class="quote-card">
+          <figure class="quote-card" data-reveal>
             <blockquote>“C++ lore that connects interviews with how compilers think.”</blockquote>
             <figcaption class="quote-meta">
               <img src="https://cdn-icons-png.flaticon.com/512/4825/4825027.png" alt="" width="48" height="48" loading="lazy" />
@@ -371,22 +378,57 @@
           <h2 class="section-heading" data-reveal>Open channel.</h2>
           <p class="section-lede" style="margin-inline: auto; text-align: center;" data-reveal>Faster answers, humane tone—tell us what's blocking your next sprint.</p>
         </header>
-        <div class="contact-grid" data-reveal>
-          <div class="contact-chip">
+        <div class="contact-grid reveal-cascade">
+          <div class="contact-chip" data-reveal>
             <span>Hours</span>
             <p>24×7</p>
           </div>
-          <div class="contact-chip">
+          <div class="contact-chip" data-reveal>
             <span>Phone</span>
             <p><a href="tel:+919140776763">9140776763</a></p>
           </div>
-          <div class="contact-chip">
+          <div class="contact-chip" data-reveal>
             <span>Email</span>
             <p style="font-size: clamp(1rem, 2.8vw, 1.65rem); word-break: break-word;"><a href="mailto:tanmay786tripathi@gmail.com">tanmay786tripathi@gmail.com</a></p>
           </div>
         </div>
       </div>
     </section>
+
+    <nav class="orbit-dock" aria-label="Jump to sections" data-orbit-dock>
+      <a href="#hero" class="orbit-dock__link orbit-dock__link--active" data-orbit-link aria-current="location">
+        <span class="orbit-dock__dot" aria-hidden="true"></span>
+        <span class="orbit-dock__tip">Overview</span>
+      </a>
+      <a href="#paths" class="orbit-dock__link" data-orbit-link>
+        <span class="orbit-dock__dot" aria-hidden="true"></span>
+        <span class="orbit-dock__tip">Tracks</span>
+      </a>
+      <a href="#courses" class="orbit-dock__link" data-orbit-link>
+        <span class="orbit-dock__dot" aria-hidden="true"></span>
+        <span class="orbit-dock__tip">Courses</span>
+      </a>
+      <a href="#gate" class="orbit-dock__link" data-orbit-link>
+        <span class="orbit-dock__dot" aria-hidden="true"></span>
+        <span class="orbit-dock__tip">GATE</span>
+      </a>
+      <a href="#practice" class="orbit-dock__link" data-orbit-link>
+        <span class="orbit-dock__dot" aria-hidden="true"></span>
+        <span class="orbit-dock__tip">Practice</span>
+      </a>
+      <a href="#reviews" class="orbit-dock__link" data-orbit-link>
+        <span class="orbit-dock__dot" aria-hidden="true"></span>
+        <span class="orbit-dock__tip">Stories</span>
+      </a>
+      <a href="#faq" class="orbit-dock__link" data-orbit-link>
+        <span class="orbit-dock__dot" aria-hidden="true"></span>
+        <span class="orbit-dock__tip">FAQ</span>
+      </a>
+      <a href="#contact" class="orbit-dock__link" data-orbit-link>
+        <span class="orbit-dock__dot" aria-hidden="true"></span>
+        <span class="orbit-dock__tip">Contact</span>
+      </a>
+    </nav>
 
     <footer class="site-footer edge" role="contentinfo">
       <div class="wrap">
@@ -418,7 +460,7 @@
           </div>
         </div>
         <div class="credit-row">
-          <span>Created by Tanmay Tripathi · curated for uncompromising learners.</span>
+          <span>Created by <span class="credit-glow">Tanmay Tripathi</span> · curated for uncompromising learners.</span>
           <span><a href="#hero">Return top</a> · <a href="about.html">About collective</a></span>
         </div>
       </div>

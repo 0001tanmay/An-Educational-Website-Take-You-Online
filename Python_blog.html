@@ -75,8 +75,56 @@ if __name__ == "__main__":
         <li>Dynamic typing hides errors until exercised; lean on hints, contracts, tests—especially before production paths.</li>
       </ul>
 
+      <h2>How values behave (names, objects, assignment)</h2>
+      <p>Assignment binds a <strong>name</strong> to an <strong>object</strong>—never “copies memory” implicitly. Lists and dicts stay shared until you consciously duplicate (<code>list()</code>, <code>dict.copy()</code>, or deep copies when graphs nest). Immutable objects (<code>int</code>, <code>str</code>, <code>tuple</code> of immutables) make aliasing benign; mutable defaults in function signatures are the classic trap because the same object survives across calls.</p>
+      <ul>
+        <li><strong>Equality vs identity:</strong> <code>==</code> asks value; <code>is</code> asks pointer identity—reach for identity only for singletons (<code>None</code>, small ints in CPython quirks).</li>
+        <li><strong>Scopes:</strong> LEGB resolves names; closures capture references, not snapshots—loops that build lambdas showcase why explicit default args freeze values (<code>lambda x, i=i: …</code>).</li>
+      </ul>
+
+      <h2>Standard-library anchors beyond “print tutorials”</h2>
+      <ul>
+        <li><strong><code>pathlib.Path</code>:</strong> composable filesystem operations without string soup.</li>
+        <li><strong><code>collections</code>:</strong> <code>defaultdict</code>, <code>Counter</code>, <code>deque</code> for interview-shaped data structures.</li>
+        <li><strong><code>itertools</code> + <code>functools</code>:</strong> finite products, grouping, LRU memoization hooks.</li>
+        <li><strong><code>typing</code> + <code>dataclasses</code>:</strong> document shape before frameworks arrive.</li>
+      </ul>
+
+      <h2>Exceptions as control flow—not wallpaper</h2>
+      <p>Prefer <strong>easier to ask forgiveness than permission (EAFP)</strong> in Pythonic codepaths: assume happy path, handle precise exceptions (<code>ValueError</code>, <code>KeyError</code>) near the semantic boundary—not a blanket <code>except Exception</code> that masks bugs. Pair with structured logging contexts when scripts graduate from notebooks to automation.</p>
+
+      <h2>Context managers: structured setup/teardown</h2>
+<pre><code># resources clean up even if exceptions fire
+from pathlib import Path
+
+
+def ingest(path: Path) -&gt; str:
+    with path.open(encoding="utf-8") as handle:
+        return handle.read().strip()
+
+
+tmp = Path("draft.txt")
+tmp.write_text("hydrate GATE notes", encoding="utf-8")
+print(ingest(tmp))
+tmp.unlink(missing_ok=True)
+</code></pre>
+
+      <h2>Packages, environments, reproducibility</h2>
+      <p>Isolate dependencies per project (<code>.venv</code>) and pin transitive versions (<code>uv.lock</code>, <code>poetry.lock</code>, etc.). Teach yourself to inspect <strong>supply-chain surfaces</strong>—where wheels come from, which native extensions imply compiler toolchains—and you align with pragmatic security reviewers without abandoning ergonomics.</p>
+
+      <h2>Mini syllabus inside the syllabus</h2>
+      <ol>
+        <li>Week-shape: data model fluency &#8594; iterators/generators &#8594; concurrency models.</li>
+        <li>Instrumentation: profiling (<code>cProfile</code>, <code>tracemalloc</code>) before rewriting hot loops blindly.</li>
+        <li>Testing ladder: doctest for pedagogy &#8594; <code>pytest</code> for fixtures &#8594; property tests when invariants sparkle.</li>
+      </ol>
+
+      <div class="doc-callout">
+        <strong>In interview rooms:</strong> narrate complexity and why you avoided a fancier abstraction—reviewers probe trade-offs, not encyclopedic builtins recall.
+      </div>
+
       <h2>Practice bridges on this site</h2>
-      <p>Use Python as shorthand for hypotheses, then lock structures with sibling tracks—algorithms proofs on <a href="dsa.html">DSA</a>, drills on <a href="algo_MCQ.html">algorithms arenas</a>, and systems intuition through <a href="CPP_blog.html">C++</a> + OS modules.</p>
+      <p>Use Python as shorthand for hypotheses, then lock structures with sibling tracks—algorithms proofs on <a href="dsa.html">DSA</a>, drills on <a href="algo_MCQ.html">algorithms arenas</a>, and systems intuition through <a href="CPP_blog.html">C++</a> plus <a href="os_MCQ.html">operating-system narratives</a>.</p>
 
       <footer class="doc-next">
         <a class="btn btn-primary" href="index.html#practice">Open practice grid</a>
